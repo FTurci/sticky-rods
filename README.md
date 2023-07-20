@@ -1,1 +1,2 @@
-# Notes on Sticky Rods
+# Sticky Rods
+
