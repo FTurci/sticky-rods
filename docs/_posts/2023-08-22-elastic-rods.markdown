@@ -9,7 +9,8 @@ I have attempted to change the simulation design to gain a significant speedup.
 
 For this, I have changed the model a bit:
 
-- the rods are now a bead-spring model with a very rigid spring $k=200$ and separation $R_0=0.5$
+- the rods are now a bead-spring model with a very rigid spring $k=200 k_BT/\sigma^2$ and separation $R_0=0.5\sigma$
+- a cosine interaction with strength $E_\theta=1000 k_bT$  ensures that the rods are (almost) straight.
 - the dynamics is Langevin with a significantly large timestep $dt=0.0025$ (compared to  $dt=0.001$ in Claudia's runs)
 - I keep the interaction paarmeters (i.e. the shape of teh potentials) the same as Claudia's.
 
