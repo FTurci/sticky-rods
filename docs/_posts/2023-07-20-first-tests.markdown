@@ -3,7 +3,7 @@ layout: post
 title:  "First runs"
 date:   2023-07-20 15:01:30 +0100
 categories: simulation
-typora-root-url: ../../docs
+typora-root-url: ../../docs/
 ---
 I have managed to upgrade `lammps` and run some initial tests with Claudia's code.
 
@@ -31,9 +31,13 @@ The system seems to be behaving correctly, with slow dynamics of the rods
 
 
 
-![image-20230720155748760](/img/earlysnap.png)
+![image-20230720155748760](/sticky-rods/assets/img/earlysnap.png)
 
 
+
+## Langevin thermostat
+
+`fix rigid` also admits the possibility of a Langevin thermostat. The relaxation seems different from the Nose-Hoover nvt (early data).
 
 
 
